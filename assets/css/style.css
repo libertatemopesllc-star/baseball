@@ -1,0 +1,168 @@
+:root {
+  --navy: #1a2b4c;
+  --navy-dark: #10192f;
+  --red: #c0392b;
+  --cream: #f7f5f0;
+  --text: #22252a;
+  --muted: #5c6472;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  background: var(--navy);
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.nav a {
+  color: #dbe1ee;
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-weight: 500;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #fff;
+  border-bottom: 2px solid var(--red);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+}
+
+.hero p {
+  color: #cfd6e4;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #a53225;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--navy);
+}
+
+.page {
+  padding: 3rem 1.5rem;
+}
+
+.page h1 {
+  color: var(--navy);
+}
+
+.schedule-table,
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: #fff;
+}
+
+.schedule-table th,
+.schedule-table td,
+.roster-table th,
+.roster-table td {
+  border: 1px solid #e0ddd4;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+.schedule-table th,
+.roster-table th {
+  background: var(--navy);
+  color: #fff;
+}
+
+.note {
+  color: var(--muted);
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: var(--navy);
+}
+
+.site-footer {
+  background: var(--navy-dark);
+  color: #cfd6e4;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
